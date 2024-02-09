@@ -5,7 +5,7 @@ export default async function Home() {
     <>
       <div className="z-10 w-full max-w-5xl px-5 xl:px-0">
         <div
-          className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-orange-100 px-7 py-2"
+          className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#d5a05b9f] px-7 py-2"
         >
           <span className="h-5 w-5 text-xl animate-hammering mr-2">🔨</span>
           <p className="text-sm font-semibold text-gray-600">
@@ -30,7 +30,7 @@ export default async function Home() {
       <GlowCapture>
         <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
           {services.map(({ title, description }) => (
-            <Glow key={title} color='#e65c0c'>
+            <Glow key={title} color='#FFAD42'>
               <div className="row-start-2 col-start-1 row-span-2 flex border border-border rounded-2xl bg-background-secondary px-5 py-4 flex-1 flex-col select-none glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.15] m-[2px] md:text-center">
                 <div className="text-xl mb-4">
                   <strong>{title}</strong></div>
