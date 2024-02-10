@@ -5,6 +5,7 @@ import { sfPro, inter } from "./fonts";
 import Nav from "@/components/layout/nav";
 import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
+import Head from "next/head";
 
 export const metadata = {
   title: "Blism",
@@ -21,6 +22,15 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <title>
+          Blism - Création de sites web, apps et traitement de données
+        </title>
+        <meta
+          name="description"
+          content="Blism vous accompagne dans vos projets de création de site web, applicatif et traitement de données"
+          key="desc" />
+      </Head>;
       <body className={cx(sfPro.variable, inter.variable)}>
         <div className="fixed h-screen w-full bg-gradient-to-br from-[#ffad4230] via-white to-[#7062505c]" />
         <Suspense fallback="...">
